@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    tools:showIn="@layout/custom_edittext">
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tappa_letter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto_black"
+        android:includeFontPadding="false"
+        android:padding="16dp"
+        android:text="# :"
+        android:textAlignment="textEnd"
+        android:textSize="20sp" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:alpha="0.7"
+        android:background="@color/myGreen_200"
+        android:id="@+id/edit_nuovopercorso_iniziopercorsolayout"
+        app:counterMaxLength="60"
+        app:endIconMode="custom"
+        app:endIconDrawable="@drawable/ic_baseline_delete_24">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:padding="16dp"
+            android:id="@+id/edit_nuovopercorso_iniziopercorso"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/background"
+            android:focusableInTouchMode="true"
+            android:imeOptions="actionSearch"
+            android:inputType="text|textAutoComplete"
+            android:maxLines="1"
+            android:overScrollMode="ifContentScrolls"
+            android:labelFor="@id/tappa_letter"
+            android:hint="Partenza" />
+    </com.google.android.material.textfield.TextInputLayout>
+</LinearLayout>

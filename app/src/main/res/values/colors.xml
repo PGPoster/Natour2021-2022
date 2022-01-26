@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="ellipse">#668AB86D</color>
+    <color name="loginfigma">#FFF3FCE9</color>
+    <color name="loginbg">#FFDEFFD4</color>
+    <color name="actionButton">#FFBFD7A1</color>
+    <color name="actionButton_shadow">#C9B3C69A</color>
+    <color name="background">#FFBCE38A</color>
+    <color name="myGreen_100.50">#FF8AB86D</color>
+    <color name="myGreen_200">#FF6BA428</color>
+    <color name="myGreen_500">#FF9DD659</color>
+    <color name="myGreen_700">#FFD0FF89</color>
+    <color name="natour_red">#FFFF375F</color>
+    <color name="myRed_200">#FFA20D1C</color>
+    <color name="myRed_700">#FFFF7C70</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="facebook">#FF1877F2</color>
+    <color name="google_bg">#FFFFFFFF</color>
+    <color name="google_fg">#FF81857B</color>
+    <color name="propic_bg">#FFCBCBCB</color>
+    <color name="propic_fg">#FF474747</color>
+</resources>

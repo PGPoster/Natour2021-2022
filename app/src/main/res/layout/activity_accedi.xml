@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="View.Accedi">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include layout="@layout/appbar"></include>
+
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background"
+        android:fillViewport="true"
+        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/imageView"
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:background="@color/ellipse"
+                app:cornerRadius="30dp" />
+
+            <include
+                layout="@layout/text_natour"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="-74dp"
+                android:elevation="5dp"></include>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="32dp" />
+
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="0sp"
+                android:alpha="0.75"
+                android:fontFamily="@font/roboto_black"
+                android:shadowColor="#99451616"
+                android:text="Inserisci i dati"
+                android:textColor="@color/black"
+                android:textSize="@dimen/page_subtitle_roboto_black" />
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.Material3.TextInputEditText.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="-24dp"
+                android:hint="E-mail"
+                app:counterMaxLength="254"
+
+
+                app:endIconMode="clear_text"
+                app:hintTextColor="@color/myGreen_200"
+                app:startIconDrawable="@drawable/ic_baseline_email_24">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edit_accedi_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/background"
+                    android:nextFocusDown="@id/edit_accedi_password"
+                    android:inputType="textEmailAddress"
+                    android:maxLength="254"
+                    android:overScrollMode="ifContentScrolls"
+                    android:paddingHorizontal="100dp"></com.google.android.material.textfield.TextInputEditText>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.Material3.TextInputEditText.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="-24dp"
+                android:hint="Password"
+                app:counterEnabled="true"
+                app:counterMaxLength="30"
+                app:endIconMode="password_toggle"
+                app:errorEnabled="true"
+                app:helperTextEnabled="true"
+                app:helperTextTextColor="@color/natour_red"
+                app:hintTextColor="@color/myGreen_200"
+                app:startIconDrawable="@drawable/ic_baseline_lock_24">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edit_accedi_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/background"
+                    android:inputType="textPassword"
+                    android:imeOptions="actionDone"
+                    android:maxLength="30"
+                    android:overScrollMode="ifContentScrolls"></com.google.android.material.textfield.TextInputEditText>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/text_nuovoprofilo_passworddimenticata"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:fontFamily="@font/roboto_bold"
+                android:gravity="end"
+                android:text="Password dimenticata?"
+                android:textSize="@dimen/button_roboto_black" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/button_nuovoprofilo_inizia"
+                style="@style/ButtonStyle"
+                android:layout_width="212dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Registrati"
+                app:cornerRadius="30dp" />
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

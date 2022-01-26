@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="page_title_roboto_black">48sp</dimen>
+    <dimen name="button_roboto_black">16sp</dimen>
+    <dimen name="page_subtitle_roboto_black">24sp</dimen>
+    <dimen name="navbar_nomecognome">20sp</dimen>
+    <dimen name="navbar_email">16sp</dimen>
+</resources>
